@@ -1,0 +1,47 @@
+<div class="jumbotron jumbotron-fluid center pb-0 mb-0">
+  <div class="container-fluid">
+    <h1 class="cover-text text-center p-5">
+      <span style="color: #fff;"><%= t('wellcome') %></span>
+    </h1>
+
+<!--  <h2>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2> 
+-->
+    <div class="p-5">   </div>
+
+    <div class="container form-signin">
+    <div class="text-center">
+      <%= form_for(:session, url: login_path) do |f| %>
+        <h1 class="h3 font-weight-normal text-white">ログインしてください</h1>
+        <%= f.label :email, class: "sr-only" %>
+        <%= f.email_field :email, class: 'form-control', placeholder: "Email address" %>
+
+        <%= f.label :password, class: "sr-only"  %>
+        <%= f.password_field :password, class: 'form-control', placeholder: "Password" %>
+
+        <div class="checkbox text-left">
+          <%= f.label :remember_me, class: "inline w-100 mt-2" do %>
+            <%= f.check_box :remember_me %>
+            <span class="text-white">Remember me on this computer</span>
+          <% end %>
+        </div>
+
+        <!-- 
+        %= link_to t('menu.login'), signup_path, class: "btn btn-lg btn-primary btn-block" %>
+        -->
+
+        <%= f.submit t('menu.login'), class: "btn btn-lg btn-primary btn-block" %>
+
+        <div class="text-left mt-2">
+          <span class="text-white">未登録の場合は 
+          <%= link_to t('menu.signup'), new_user_path, class: "text-dark" %>
+           します</span>
+        </div>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>

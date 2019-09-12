@@ -1,0 +1,20 @@
+<div class="container">
+  <% provide(:title, 'All users') %>
+
+  <h1 class="cover-text text-center p-5">
+  <span><%= t('index') %></span>
+  </h1>
+
+  <table class="table table-bordered table-hover">
+
+    <tr class="bg-primary text-white">
+      <th>アバター</td>
+      <th>名前</td>
+      <th>アクション</td>
+    </tr>
+
+    <%= render @users %>
+
+  </table>
+
+</div>

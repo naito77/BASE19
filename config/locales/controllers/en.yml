@@ -1,0 +1,8 @@
+ja:
+  users_controller:
+    create:
+      flash_success: 'Welcome to the BASE17!'
+    update:
+      flash_success: 'Profile updated'
+    destroy:
+      flash_success: 'User deleted'

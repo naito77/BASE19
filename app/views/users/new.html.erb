@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="cover-text text-center p-5">
+  <span><%= t('menu.signup') %></span>
+  </h1>
+
+  <div class="container form-signin">
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :name, class: "mt-2 mb-0" %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :email, class: "mt-2 mb-0" %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password, class: "mt-2 mb-0" %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.label :password_confirmation, class: "mt-2 mb-0" %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+      <%= f.submit t('button.singup'), class: "btn btn-primary mt-2" %>
+    <% end %>
+  </div>
+</div>

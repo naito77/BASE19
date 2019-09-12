@@ -1,0 +1,17 @@
+en:
+  application: 'Base18'
+  developer: 'Web Learning Environment Laboratory, Graduate School and Faculty of Information Science and Technology'
+  copyright: '@2018 Osaka Institute of Technology, All rights reserved.'
+  wellcome: 'Wellcome to Web Learning Environment Laboratory'
+  menu:
+    about: 'About'
+    contact: 'Contact'
+    help: 'Help'
+    home: 'Home'    
+    login: 'Login'
+    logout: 'Logout'
+    news: 'News'
+    profile: 'Profile'
+    setting: 'Settings'
+    signup: 'Sign up now!'
+    users: 'Users'

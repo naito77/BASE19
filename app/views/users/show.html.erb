@@ -1,0 +1,17 @@
+<% provide(:title, @user.name) %>
+
+<div class="container form-sigin">
+
+  <h1 class="cover-text text-center p-5">
+  <span><%= t('show') %></span>
+  </h1>
+
+  <section class="container form-sigin">
+      <ul>
+        <li><%= gravatar_for @user %>
+        <li><%= @user.name %>
+        <li><%= @user.email %>
+      </ul>
+    </section>
+
+</div>

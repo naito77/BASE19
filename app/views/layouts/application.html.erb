@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 m-0">
+      <!-- header -->
+      <!-- <header class="navbar fixed-top navbar-expand-lg">
+      header
+      </header> -->
+      
+      <%= render 'layouts/header' %>
+
+      <main class="container-fluid m-0 p-0">
+        <div class="container">
+          <% flash.each do |message_type, message| %>
+            <div class="alert m-2 p-2 alert-<%= message_type %>">
+            <%= message %></div>
+          <% end %>
+        </div>
+      
+        <%= yield %>
+      
+      </main>
+
+      <!-- footer -->
+      <%= render 'layouts/footer' %>
+
+      <!-- debug -->
+      <div class="m-3">
+        <%= debug(params) if Rails.env.development? %>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+ja:
+  users_controller:
+    create:
+      flash_success: 'BASE17へようこそ！'
+    update:
+      flash_success: 'プロフィールが更新されました'
+    destroy:
+      flash_success: 'アカウントが削除されました'

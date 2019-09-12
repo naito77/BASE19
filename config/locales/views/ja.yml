@@ -1,0 +1,18 @@
+ja:
+  application: 'Base18'
+  developer: 'WEB学習環境研究室, 大阪工業大学　情報科学部'
+  copyright: '@2015-2019 Osaka Institute of Technology, All rights reserved.'
+  wellcome: 'WEB学習環境研究室にようこそ'
+  menu:  
+    account: 'アカウント'
+    about: 'サイト情報'
+    contact: 'お問い合わせ'
+    help: 'ヘルプ'
+    home: 'ホーム'
+    news: 'お知らせ'
+    login: 'ログイン'
+    logout: 'ログアウト'
+    profile: 'プロフィール'
+    settings: '設定'
+    signup: 'ユーザ登録'
+    users: 'ユーザ一覧'
